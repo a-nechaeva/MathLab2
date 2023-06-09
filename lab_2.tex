@@ -160,8 +160,77 @@ f(x) =
 0 \leq \pi x \leq 2 \pi \, \, \to \, \,
 -\pi \leq \pi(x-1) \leq \pi\\
 \end{equation*}
-Новая переменная $t =\pi(x-1)$. Выразим $x = \frac{t}{\pi} + 1$\\
-Функция $f(x)$ удовлетворяет условию теоремы Дирихле
+Новая переменная $t =\pi(x-1)$. Выразим $x = \frac{t}{\pi} + 1$ и запишем новую функцию $\phi (t) = f( \frac{t}{\pi} + 1)$. $\phi (t)$ определена на отрезке $[-\pi, \, \pi]$ и имеет период $T = 2 \pi$.\\
+Функция $\phi (t)$ удовлетворяет условию теоремы Дирихле о разложении периодической функции в ряд Фурье.
+\begin{equation*}
+\phi (t) = \frac{a_0}{2} + \sum \limits_{n = 1}^{\infty} \left( a_n \cos(nt) + b_n \sin(nt) \right), 
+\end{equation*}
+где $a_0, \, a_n, \, b_n$ -- коэффициенты Фурье:\\
+\begin{equation*}
+a_0 = \frac{1}{\pi} \int \limits_{-\pi}^{\pi} \phi(t) \, dt,
+\end{equation*}
+\begin{equation*}
+a_n = \frac{1}{\pi} \int \limits_{-\pi}^{\pi} \phi(t) \cos(nt) \, dt,
+\end{equation*}
+\begin{equation*}
+b_n = \frac{1}{\pi} \int \limits_{-\pi}^{\pi} \phi(t) \sin(nt) \, dt.
+\end{equation*}
+Проведем обратную замену $t =\pi(x-1)$:
+\begin{equation*}
+f (x) = \frac{a_0}{2} + \sum \limits_{n = 1}^{\infty} \left( a_n \cos(\pi n(x-1)) + b_n \sin(\pi n(x-1)) \right), 
+\end{equation*}
+\begin{equation*}
+a_0 = \frac{1}{\pi} \int \limits_{0}^{2} f(x) \pi \, dx = \int \limits_{0}^{2} f(x) \, dx, 
+\end{equation*}
+\begin{equation*}
+a_n = \frac{1}{\pi} \int \limits_{0}^{2} f(x) \cos(\pi n(x-1))  \pi \, dx = \int \limits_{0}^{2} f(x) \cos(\pi n(x-1)) \, dx ,
+\end{equation*}
+\begin{equation*}
+b_n = \frac{1}{\pi} \int \limits_{0}^{2} f(x) \sin(\pi n(x-1)) \pi \, dx = \int \limits_{0}^{2} f(x) \sin(\pi n(x-1)) \, dx .
+\end{equation*}
+
+Вычислим значения коэффициетов:
+\begin{equation*}
+a_0 = \int \limits_{0}^{2} f(x) \, dx = \int \limits_{0}^{1} 0 \, dx + \int \limits_{1}^{2} 2 - x \, dx = \frac{1}{2}
+\end{equation*}
+\begin{multline*}
+a_n  = \int \limits_{0}^{2} f(x) \cos(\pi n(x-1)) \, dx = \int \limits_{1}^{2} (2-x) \cos(\pi n(x-1)) \, dx \, \, \fbox{=}
+\end{multline*}
+Вычислим неопределенный интеграл:
+\begin{multline*}
+ \int  (2-x) \cos(\pi n(x-1)) \, dx = 
+\begin{Vmatrix}
+v = 2-x \, & dv = -dx\\
+du = \cos(\pi n(x-1)) \, dx \, & u = \frac{\sin(\pi n(x-1))}{\pi n}
+\end{Vmatrix}
+= \\ =  \frac{(2-x) \sin(\pi n(x-1))}{\pi n} + \frac{1}{\pi n} \int \sin(\pi n(x-1)) \, dx = \\=
+ \frac{(2-x) \sin(\pi n(x-1))}{\pi n} -  \frac{\cos (\pi n(x-1))}{(\pi n)^2} + C
+\end{multline*}
+
+\begin{equation*}
+\fbox{=} -  \frac{\cos (\pi n)}{(\pi n)^2} + \frac{\cos (0)}{(\pi n)^2} = \frac{1}{(\pi n)^2} -  \frac{(-1)^n}{(\pi n)^2}
+\end{equation*}
+\begin{equation*}
+b_n  = \int \limits_{0}^{2} f(x) \sin(\pi n(x-1)) \, dx  =  \int \limits_{1}^{2} (2-x) \sin(\pi n(x-1)) \, dx \, \, \fbox{=}
+\end{equation*}
+Вычислим неопределенный интеграл:
+\begin{multline*}
+ \int  (2-x) \sin(\pi n(x-1)) \, dx = 
+\begin{Vmatrix}
+v = 2-x \, & dv = -dx\\
+du = \sin(\pi n(x-1)) \, dx \, & u = -\frac{\cos(\pi n(x-1))}{\pi n}
+\end{Vmatrix}
+= \\ =  - \frac{(2-x) \cos(\pi n(x-1))}{\pi n} - \frac{1}{\pi n} \int \cos(\pi n(x-1)) \, dx = \\=
+ -\frac{(2-x) \cos(\pi n(x-1))}{\pi n} -  \frac{\sin (\pi n(x-1))}{(\pi n)^2} + C
+\end{multline*}
+\begin{equation*}
+\fbox{=} \frac{1}{\pi n}
+\end{equation*}
+Запишем итоговую формулу для разложения в тригонометрический ряд Фурье:
+\begin{equation*}
+f (x) = \frac{1}{4} + \sum \limits_{n = 1}^{\infty} \left( \left( \frac{1}{(\pi n)^2} -  \frac{(-1)^n}{(\pi n)^2}  \right) \cos(\pi n(x-1)) +  \left( \frac{1}{\pi n} \right) \sin(\pi n(x-1)) \right)
+\end{equation*}
+
 
 \newpage
 \subsection{Построение ряда Фурье по синусам}
