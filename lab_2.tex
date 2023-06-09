@@ -154,7 +154,7 @@ f(x) =
 
 
 \subsection{Построение общего тригонометрического ряда}	
-Период: $T = 2l = 2 \to l = 1$. $f(x+2l)=f(x)$ и $f(x)$ определена на $[0, 2]$. Преобразуем:
+$f(x)$ определена на $[0, 2]$. Преобразуем:
 \begin{equation*}
 0 \leq x \leq 2  \, \, \to \, \,
 0 \leq \pi x \leq 2 \pi \, \, \to \, \,
@@ -238,6 +238,44 @@ f (x) = \frac{1}{4} + \sum \limits_{n = 1}^{\infty} \left( \left( \frac{1}{(\pi 
 
 \newpage
 \subsection{Построение ряда Фурье по косинусам}
+Непериодическая функция $f(x)$ задана на отрезке $[0, 2]$. Доопределим функцию $f(x)$ на отрезке $[-2, 0]$ четным образом, то есть $f(x) = f(-x), \, x \in [-2, 0]$. Для полученной четной функции на отрезке $[-2, 2]$ строим ряд Фурье:
+\begin{equation*} 
+f(x) = \frac{a_0}{2} + \sum \limits_{n=1}^{\infty} a_n \cos \frac{\pi n x}{2},
+\end{equation*}
+где
+\begin{equation*} 
+a_0 = \frac{2}{2} \int \limits_{0}^{2} f(x) \, dx = \int \limits_{0}^{2} f(x) \, dx
+\end{equation*}
+\begin{equation*} 
+a_n =  \int \limits_{0}^{2} f(x) \cos \frac{\pi n x}{2} \, dx
+\end{equation*}
+Рассматриваем сумму этого ряда только на отрезке $[0, 2]$ и получаем разложение исходной функции $f(x)$ на отрезке  $[0, 2]$ в ряд Фурье по косинусам.\\
+Вычислим значения коэффициентов:
+\begin{equation*} 
+a_0 = \int \limits_{0}^{2} f(x) \, dx =  \int \limits_{1}^{2} (2-x) \, dx = \frac{1}{2}
+\end{equation*}
+\begin{equation*} 
+a_n =  \int \limits_{0}^{2} f(x) \cos \frac{\pi n x}{2} \, dx = \int \limits_{1}^{2} (2-x) \cos \frac{\pi n x}{2} \, dx \, \, \fbox{=}
+\end{equation*}
+Вычислим неопределенный интеграл:
+\begin{multline*} 
+ \int  (2-x) \cos \frac{\pi n x}{2} \, dx = 
+\begin{Vmatrix}
+v = 2-x \, & dv = -dx\\
+du =   \cos \frac{\pi n x}{2} \, dx \, & u = \frac{2 \sin \left( \frac{\pi n x}{2}\right)}{\pi n}
+\end{Vmatrix}
+=\\= \frac{2 (2-x) \sin \left( \frac{\pi n x}{2}\right)}{\pi n} + \int \frac{2 \sin \left( \frac{\pi n x}{2}\right)}{\pi n}  \, dx =
+\frac{2 (2-x) \sin \left( \frac{\pi n x}{2}\right)}{\pi n} - \frac{4 \cos \left( \frac{\pi n x}{2} \right)}{(\pi n)^2} + C
+\end{multline*}
+
+\begin{equation*} 
+\fbox{=} - \frac{4 \cos \left( \pi n x \right)}{(\pi n)^2} - \frac{2 \sin \left( \frac{\pi n}{2}\right)}{\pi n} + \frac{4 \cos \left( \frac{\pi n }{2} \right)}{(\pi n)^2} = - \frac{4 \left( -1 \right)^n}{(\pi n)^2} - \frac{2 \sin \left( \frac{\pi n}{2}\right)}{\pi n} + \frac{4 \cos \left( \frac{\pi n }{2} \right)}{(\pi n)^2} 
+\end{equation*}
+Запишем итоговое разложение функции в ряд Фурье по косинусам:
+\begin{equation*} 
+f(x) = \frac{1}{4} + \sum \limits_{n=1}^{\infty} \left(- \frac{4 \left( -1 \right)^n}{(\pi n)^2} - \frac{2 \sin \left( \frac{\pi n}{2}\right)}{\pi n} + \frac{4 \cos \left( \frac{\pi n }{2} \right)}{(\pi n)^2} \right) \cos \frac{\pi n x}{2}
+\end{equation*}
+
 \end{document}
 
 
