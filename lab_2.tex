@@ -20,7 +20,7 @@
 \pagestyle{fancy}
 \fancypagestyle{style}{ % создание нового стиля style
 	\fancyhf{} % очистка колонтитулов
-	\fancyhead[LO, RE]{<КРАТКОЕ НАЗВАНИЕ>} % название документа наверху
+	\fancyhead[LO, RE]{Ряд Фурье} % название документа наверху
 	\fancyhead[RO, LE]{\leftmark} % название section наверху
 	\fancyfoot[RO, LE]{\thepage} % номер страницы справа внизу на нечетных и слева внизу на четных
 	\renewcommand{\headrulewidth}{0.25pt} % толщина линии сверху
@@ -160,7 +160,7 @@ $f(x)$ определена на $[0, 2]$. Преобразуем:
 0 \leq \pi x \leq 2 \pi \, \, \to \, \,
 -\pi \leq \pi(x-1) \leq \pi\\
 \end{equation*}
-Новая переменная $t =\pi(x-1)$. Выразим $x = \frac{t}{\pi} + 1$ и запишем новую функцию $\phi (t) = f( \frac{t}{\pi} + 1)$. $\phi (t)$ определена на отрезке $[-\pi, \, \pi]$ и имеет период $T = 2 \pi$.\\
+Новая переменная $t =\pi(x-1)$. Выразим $x = \frac{t}{\pi} + 1$ и запишем новую функцию $\phi (t) = f( \frac{t}{\pi} + 1)$. $\phi (t)$ определена на отрезке $[-\pi, \, \pi]$ .\\
 Функция $\phi (t)$ удовлетворяет условию теоремы Дирихле о разложении периодической функции в ряд Фурье.
 \begin{equation*}
 \phi (t) = \frac{a_0}{2} + \sum \limits_{n = 1}^{\infty} \left( a_n \cos(nt) + b_n \sin(nt) \right), 
@@ -306,6 +306,16 @@ du =   \cos \frac{\pi n x}{2} \, dx \, & u = \frac{2 \sin \left( \frac{\pi n x}{
 f(x) = \frac{1}{4} + \sum \limits_{n=1}^{\infty} \left(- \frac{4 \left( -1 \right)^n}{(\pi n)^2} - \frac{2 \sin \left( \frac{\pi n}{2}\right)}{\pi n} + \frac{4 \cos \left( \frac{\pi n }{2} \right)}{(\pi n)^2} \right) \cos \frac{\pi n x}{2}
 \end{equation*}
 
+
+\newpage
+
+\section{Работа программы}
+Программа написана на языке \textit{Python 3.9} с тспользованием библиотеки \textit{Manim}.
+
+
+\newpage
+
+\section{Нахождение суммы для каждого разложения в ряд Фурье}
 \end{document}
 
 

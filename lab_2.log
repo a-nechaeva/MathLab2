@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.23)  9 JUN 2023 23:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.23)  10 JUN 2023 20:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1377,16 +1377,34 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
-[7] (./lab_2.aux)
-Package rerunfilecheck Info: File `lab_2.out' has not changed.
-(rerunfilecheck)             Checksum: B76F177C9F69C667D2B95DE8605554BF;1230.
+[7]
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\footskip}{12.0pt}.
+
+[8]
+
+Package fancyhdr Warning: \footskip is too small (0.0pt): 
+(fancyhdr)                Make it at least 12.0pt, for example:
+(fancyhdr)                \setlength{\footskip}{12.0pt}.
+
+[9] (./lab_2.aux)
+
+Package rerunfilecheck Warning: File `lab_2.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `lab_2.out':
+(rerunfilecheck)             Before: 919239DF5C67D0D4F15F620A67EEEEF1;1401
+(rerunfilecheck)             After:  85ED465BB67F9A5D33FBC679968D8617;1852.
  ) 
 Here is how much of TeX's memory you used:
- 51684 strings out of 476001
- 1295547 string characters out of 5793197
- 1979023 words of memory out of 5000000
- 71532 multiletter control sequences out of 15000+600000
- 525965 words of font info for 67 fonts, out of 8000000 for 9000
+ 51691 strings out of 476001
+ 1295611 string characters out of 5793197
+ 1979007 words of memory out of 5000000
+ 71534 multiletter control sequences out of 15000+600000
+ 526839 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,15n,89p,758b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/tex
@@ -1403,11 +1421,12 @@ fonts/type1/public/cm-super/sfbx1440.pfb><c:/texlive/2023/texmf-dist/fonts/type
 1/public/cm-super/sfrm0800.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/c
 m-super/sfrm0900.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sf
 rm1000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb
-><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on lab_2.pdf (7 pages, 238787 bytes).
+><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb><c:/texli
+ve/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
+Output written on lab_2.pdf (9 pages, 265537 bytes).
 PDF statistics:
- 150 PDF objects out of 1000 (max. 8388607)
- 105 compressed objects within 2 object streams
- 13 named destinations out of 1000 (max. 500000)
- 45 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 168 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
+ 17 named destinations out of 1000 (max. 500000)
+ 53 words of extra memory for PDF output out of 10000 (max. 10000000)
 
