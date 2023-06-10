@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.23)  10 JUN 2023 23:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.4.23)  11 JUN 2023 00:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1385,47 +1385,47 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
 [7]
-<./pictures/o_5.png, id=79, 973.38657pt x 421.575pt>
+<./pictures/o_5.png, id=75, 973.38657pt x 421.575pt>
 File: ./pictures/o_5.png Graphic file (type png)
 <use ./pictures/o_5.png>
 Package pdftex.def Info: ./pictures/o_5.png  used on input line 318.
 (pdftex.def)             Requested size: 240.9938pt x 104.37068pt.
-<./pictures/o_10.png, id=80, 968.86969pt x 416.30531pt>
+<./pictures/o_10.png, id=76, 968.86969pt x 416.30531pt>
 File: ./pictures/o_10.png Graphic file (type png)
 <use ./pictures/o_10.png>
 Package pdftex.def Info: ./pictures/o_10.png  used on input line 322.
 (pdftex.def)             Requested size: 240.9938pt x 103.54883pt.
-<./pictures/o_50.png, id=81, 960.58875pt x 427.5975pt>
+<./pictures/o_50.png, id=77, 960.58875pt x 427.5975pt>
 File: ./pictures/o_50.png Graphic file (type png)
 <use ./pictures/o_50.png>
 Package pdftex.def Info: ./pictures/o_50.png  used on input line 326.
 (pdftex.def)             Requested size: 240.9938pt x 107.27101pt.
-<./pictures/s_5.png, id=82, 899.61093pt x 421.575pt>
+<./pictures/s_5.png, id=78, 899.61093pt x 421.575pt>
 File: ./pictures/s_5.png Graphic file (type png)
 <use ./pictures/s_5.png>
 Package pdftex.def Info: ./pictures/s_5.png  used on input line 336.
 (pdftex.def)             Requested size: 240.9938pt x 112.93262pt.
-<./pictures/s_10.png, id=83, 885.3075pt x 424.58624pt>
+<./pictures/s_10.png, id=79, 885.3075pt x 424.58624pt>
 File: ./pictures/s_10.png Graphic file (type png)
 <use ./pictures/s_10.png>
 Package pdftex.def Info: ./pictures/s_10.png  used on input line 340.
 (pdftex.def)             Requested size: 240.9938pt x 115.57922pt.
-<./pictures/s_50.png, id=84, 904.1278pt x 426.09187pt>
+<./pictures/s_50.png, id=80, 904.1278pt x 426.09187pt>
 File: ./pictures/s_50.png Graphic file (type png)
 <use ./pictures/s_50.png>
 Package pdftex.def Info: ./pictures/s_50.png  used on input line 344.
 (pdftex.def)             Requested size: 240.9938pt x 113.57047pt.
-<./pictures/c_5.png, id=85, 927.465pt x 421.575pt>
+<./pictures/c_5.png, id=81, 927.465pt x 421.575pt>
 File: ./pictures/c_5.png Graphic file (type png)
 <use ./pictures/c_5.png>
 Package pdftex.def Info: ./pictures/c_5.png  used on input line 354.
 (pdftex.def)             Requested size: 240.9938pt x 109.54257pt.
-<./pictures/c_10.png, id=86, 927.465pt x 426.09187pt>
+<./pictures/c_10.png, id=82, 927.465pt x 426.09187pt>
 File: ./pictures/c_10.png Graphic file (type png)
 <use ./pictures/c_10.png>
 Package pdftex.def Info: ./pictures/c_10.png  used on input line 358.
 (pdftex.def)             Requested size: 240.9938pt x 110.71625pt.
-<./pictures/c_50.png, id=87, 914.66719pt x 421.575pt>
+<./pictures/c_50.png, id=83, 914.66719pt x 421.575pt>
 File: ./pictures/c_50.png Graphic file (type png)
 <use ./pictures/c_50.png>
 Package pdftex.def Info: ./pictures/c_50.png  used on input line 362.
@@ -1449,7 +1449,7 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
 [10 <./pictures/c_5.png> <./pictures/c_10.png> <./pictures/c_50.png>]
-<./pictures/max.png, id=109, 965.85844pt x 433.62pt>
+<./pictures/max.png, id=105, 965.85844pt x 433.62pt>
 File: ./pictures/max.png Graphic file (type png)
 <use ./pictures/max.png>
 Package pdftex.def Info: ./pictures/max.png  used on input line 373.
@@ -1460,24 +1460,18 @@ Package fancyhdr Warning: \footskip is too small (0.0pt):
 (fancyhdr)                Make it at least 12.0pt, for example:
 (fancyhdr)                \setlength{\footskip}{12.0pt}.
 
-[11 <./pictures/max.png>]
-
-Package fancyhdr Warning: \footskip is too small (0.0pt): 
-(fancyhdr)                Make it at least 12.0pt, for example:
-(fancyhdr)                \setlength{\footskip}{12.0pt}.
-
-[12] (./lab_2.aux)
+[11 <./pictures/max.png>] (./lab_2.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `lab_2.out' has not changed.
-(rerunfilecheck)             Checksum: 85ED465BB67F9A5D33FBC679968D8617;1852.
+(rerunfilecheck)             Checksum: 919239DF5C67D0D4F15F620A67EEEEF1;1401.
  ) 
 Here is how much of TeX's memory you used:
- 51815 strings out of 476001
- 1298033 string characters out of 5793197
- 1979417 words of memory out of 5000000
- 71634 multiletter control sequences out of 15000+600000
+ 51812 strings out of 476001
+ 1298006 string characters out of 5793197
+ 1979397 words of memory out of 5000000
+ 71633 multiletter control sequences out of 15000+600000
  530132 words of font info for 76 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,15n,89p,758b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1502,10 +1496,10 @@ ts/type1/public/cm-super/sfrm1200.pfb><c:/texlive/2023/texmf-dist/fonts/type1/p
 ublic/cm-super/sfti0800.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-s
 uper/sfti0900.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1
 000.pfb><c:/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1200.pfb>
-Output written on lab_2.pdf (12 pages, 1769039 bytes).
+Output written on lab_2.pdf (11 pages, 1761395 bytes).
 PDF statistics:
- 228 PDF objects out of 1000 (max. 8388607)
- 154 compressed objects within 2 object streams
- 24 named destinations out of 1000 (max. 500000)
- 111 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 220 PDF objects out of 1000 (max. 8388607)
+ 147 compressed objects within 2 object streams
+ 22 named destinations out of 1000 (max. 500000)
+ 103 words of extra memory for PDF output out of 10000 (max. 10000000)
 
