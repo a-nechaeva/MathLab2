@@ -20,7 +20,7 @@
 \pagestyle{fancy}
 \fancypagestyle{style}{ % создание нового стиля style
 	\fancyhf{} % очистка колонтитулов
-	\fancyhead[LO, RE]{Ряд Фурье} % название документа наверху
+	\fancyhead[LO, RE]{} % название документа наверху
 	\fancyhead[RO, LE]{\leftmark} % название section наверху
 	\fancyfoot[RO, LE]{\thepage} % номер страницы справа внизу на нечетных и слева внизу на четных
 	\renewcommand{\headrulewidth}{0.25pt} % толщина линии сверху
@@ -163,7 +163,7 @@ $f(x)$ определена на $[0, 2]$. Преобразуем:
 Новая переменная $t =\pi(x-1)$. Выразим $x = \frac{t}{\pi} + 1$ и запишем новую функцию $\phi (t) = f( \frac{t}{\pi} + 1)$. $\phi (t)$ определена на отрезке $[-\pi, \, \pi]$ .\\
 Функция $\phi (t)$ удовлетворяет условию теоремы Дирихле о разложении периодической функции в ряд Фурье.
 \begin{equation*}
-\phi (t) = \frac{a_0}{2} + \sum \limits_{n = 1}^{\infty} \left( a_n \cos(nt) + b_n \sin(nt) \right), 
+\phi (t) \sim  \frac{a_0}{2} + \sum \limits_{n = 1}^{\infty} \left( a_n \cos(nt) + b_n \sin(nt) \right), 
 \end{equation*}
 где $a_0, \, a_n, \, b_n$ -- коэффициенты Фурье:\\
 \begin{equation*}
@@ -177,7 +177,7 @@ b_n = \frac{1}{\pi} \int \limits_{-\pi}^{\pi} \phi(t) \sin(nt) \, dt.
 \end{equation*}
 Проведем обратную замену $t =\pi(x-1)$:
 \begin{equation*}
-f (x) = \frac{a_0}{2} + \sum \limits_{n = 1}^{\infty} \left( a_n \cos(\pi n(x-1)) + b_n \sin(\pi n(x-1)) \right), 
+f (x) \sim  \frac{a_0}{2} + \sum \limits_{n = 1}^{\infty} \left( a_n \cos(\pi n(x-1)) + b_n \sin(\pi n(x-1)) \right),
 \end{equation*}
 \begin{equation*}
 a_0 = \frac{1}{\pi} \int \limits_{0}^{2} f(x) \pi \, dx = \int \limits_{0}^{2} f(x) \, dx, 
@@ -228,7 +228,7 @@ du = \sin(\pi n(x-1)) \, dx \, & u = -\frac{\cos(\pi n(x-1))}{\pi n}
 \end{equation*}
 Запишем итоговую формулу для разложения в тригонометрический ряд Фурье:
 \begin{equation*}
-f (x) = \frac{1}{4} + \sum \limits_{n = 1}^{\infty} \left( \left( \frac{1}{(\pi n)^2} -  \frac{(-1)^n}{(\pi n)^2}  \right) \cos(\pi n(x-1)) +  \left( \frac{1}{\pi n} \right) \sin(\pi n(x-1)) \right)
+f (x) \sim  \frac{1}{4} + \sum \limits_{n = 1}^{\infty} \left( \left( \frac{1}{(\pi n)^2} -  \frac{(-1)^n}{(\pi n)^2}  \right) \cos(\pi n(x-1)) +  \left( \frac{1}{\pi n} \right) \sin(\pi n(x-1)) \right)
 \end{equation*}
 
 
@@ -236,7 +236,7 @@ f (x) = \frac{1}{4} + \sum \limits_{n = 1}^{\infty} \left( \left( \frac{1}{(\pi 
 \subsection{Построение ряда Фурье по синусам}
 Доопределим функцию $f(x)$ на отрезке $[-2, 0]$ четным образом, то есть $f(x) = -f(-x), \, x \in [-2, 0]$. Для полученной четной функции на отрезке $[-2, 2]$ строим ряд Фурье:
 \begin{equation*} 
-f(x) = \sum \limits_{n=1}^{\infty} b_n \sin \frac{\pi n x}{2},
+f(x) \sim  \sum \limits_{n=1}^{\infty} b_n \sin \frac{\pi n x}{2},
 \end{equation*}
 где
 \begin{equation*} 
@@ -262,7 +262,7 @@ du =   \sin \frac{\pi n x}{2} \, dx \, & u = -\frac{2 \cos \left( \frac{\pi n x}
 \end{equation*}
 Запишем итоговое разложение функции в ряд Фурье по синусам:
 \begin{equation*} 
-f(x) = \sum \limits_{n=1}^{\infty} \left( \frac{4 \sin \left( \frac{\pi n}{2}\right)}{(\pi n)^2} + \frac{2 \cos \left( \frac{\pi n}{2}\right)}{\pi n} \right) \sin \frac{\pi n x}{2}
+f(x) \sim  \sum \limits_{n=1}^{\infty} \left( \frac{4 \sin \left( \frac{\pi n}{2}\right)}{(\pi n)^2} + \frac{2 \cos \left( \frac{\pi n}{2}\right)}{\pi n} \right) \sin \frac{\pi n x}{2}
 \end{equation*}
 
 
@@ -270,7 +270,7 @@ f(x) = \sum \limits_{n=1}^{\infty} \left( \frac{4 \sin \left( \frac{\pi n}{2}\ri
 \subsection{Построение ряда Фурье по косинусам}
 Непериодическая функция $f(x)$ задана на отрезке $[0, 2]$. Доопределим функцию $f(x)$ на отрезке $[-2, 0]$ четным образом, то есть $f(x) = f(-x), \, x \in [-2, 0]$. Для полученной четной функции на отрезке $[-2, 2]$ строим ряд Фурье:
 \begin{equation*} 
-f(x) = \frac{a_0}{2} + \sum \limits_{n=1}^{\infty} a_n \cos \frac{\pi n x}{2},
+f(x) \sim  \frac{a_0}{2} + \sum \limits_{n=1}^{\infty} a_n \cos \frac{\pi n x}{2},
 \end{equation*}
 где
 \begin{equation*} 
@@ -303,7 +303,7 @@ du =   \cos \frac{\pi n x}{2} \, dx \, & u = \frac{2 \sin \left( \frac{\pi n x}{
 \end{equation*}
 Запишем итоговое разложение функции в ряд Фурье по косинусам:
 \begin{equation*} 
-f(x) = \frac{1}{4} + \sum \limits_{n=1}^{\infty} \left(- \frac{4 \left( -1 \right)^n}{(\pi n)^2} - \frac{2 \sin \left( \frac{\pi n}{2}\right)}{\pi n} + \frac{4 \cos \left( \frac{\pi n }{2} \right)}{(\pi n)^2} \right) \cos \frac{\pi n x}{2}
+f(x) \sim  \frac{1}{4} + \sum \limits_{n=1}^{\infty} \left(- \frac{4 \left( -1 \right)^n}{(\pi n)^2} - \frac{2 \sin \left( \frac{\pi n}{2}\right)}{\pi n} + \frac{4 \cos \left( \frac{\pi n }{2} \right)}{(\pi n)^2} \right) \cos \frac{\pi n x}{2}
 \end{equation*}
 
 
@@ -369,6 +369,8 @@ f(x) = \frac{1}{4} + \sum \limits_{n=1}^{\infty} \left(- \frac{4 \left( -1 \righ
 \newpage
 
 \section{Нахождение суммы для каждого разложения в ряд Фурье}
+
+
 \end{document}
 
 
